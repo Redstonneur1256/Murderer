@@ -1,0 +1,43 @@
+
+# Define if the game is cancelled if the murderer disconnects
+cancelOnLeave: false
+
+# Player abilities:
+abilities:
+
+  blindness:
+    slot: 0 # Item slot
+    item: 'INK_SACK' # Item type
+    name: '&bBlindness' # Item name
+    lore: # Lore
+      - ''
+      - '&fGive &bblindness &feffect to other players'
+    effect: 'BLINDNESS' # Effect name
+    duration: 30 # Duration in seconds
+    amplifier: 0 # Effect amplifier
+    self: false # true if the effect is given to murderer
+
+  invisibility:
+    slot: 1
+    item: 'GLASS'
+    name: '&7Invisibility'
+    lore:
+      - ''
+      - '&fGive you a &7invisibility &fII effect for 15 seconds'
+    effect: 'INVISIBILITY'
+    duration: 15
+    amplifier: 1
+    self: true
+
+  strength:
+    slot: 2
+    item: 'DIAMOND_SWORD'
+    name: '&cStrength'
+    lore:
+      - ''
+      - '&fGive you a &cstrength&f II effect for 5 seconds'
+    effect: 'INCREASE_DAMAGE'
+    duration: 5
+    amplifier: 2
+    self: true
+

@@ -1,0 +1,7 @@
+name: Murderer
+version: @version@
+main: fr.redstonneur1256.murderer.MurdererPlugin
+#api-version: 1.16
+commands:
+  murderer:
+    permission: "murderer.use"
